@@ -17,6 +17,7 @@ ordinal_features = ['RR', 'BR']
 
 # Dane wejściowe i etykiety
 X = data.drop(data.columns[-7:], axis=1)  # Zakładamy, że ostatnie 7 kolumn to etykiety
+
 y = data[data.columns[-7:]]  # Etykiety
 
 # Tworzenie transformatorów dla numerycznych, kategorycznych i porządkowych danych
