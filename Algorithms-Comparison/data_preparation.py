@@ -37,8 +37,6 @@ X_processed = pipeline.fit_transform(X)
 # Podział danych na zestaw treningowy i testowy
 X_train, X_test, y_train, y_test = train_test_split(X_processed, y, test_size=0.2, random_state=42)
 
-print("Przetworzone dane treningowe:", X_train.shape)
-print("Przetworzone dane testowe:", X_test.shape)
 
 # Zapis danych treningowych i testowych do plików CSV
 pd.DataFrame(X_train).to_csv('X_train.csv', index=False)
